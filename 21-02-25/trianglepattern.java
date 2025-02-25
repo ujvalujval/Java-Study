@@ -1,4 +1,4 @@
-public class Main {
+public class trianglepattern {
     static int n = 5;
 
     static class Inner {
