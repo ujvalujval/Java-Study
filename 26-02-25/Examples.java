@@ -36,13 +36,13 @@ public class Examples {
 
     public static void fibonnicSeries(int n) {
         System.out.println("Fibonnic Series : ");
-        int a = -1, b = 1, c;
+        int firstNumber = -1, secondNumber = 1, result;
         for (int i = 0; i < n; i++) {
-            c = a + b;
-            // System.out.println( a+" : "+b);
-            System.out.print(" " + c);
-            a = b;
-            b = c;
+            result = firstNumber + secondNumber;
+            // System.out.println( firstNumber+" : "+secondNumber);
+            System.out.print(" " + result);
+            firstNumber = secondNumber;
+            secondNumber = result;
         }
     }
 
