@@ -67,6 +67,8 @@ public class twoDArray {
         return twoDArray;
     }
 
+    
+
     public static void main(String[] args) {
         System.out.print("\nEnter the size of the row :");
         int row = input.nextInt();
@@ -80,11 +82,11 @@ public class twoDArray {
             }
         }
         System.out.println(" Your matrix value is\n");
-        // sorting matrix
         // sorting(twodarray);
         // transpose(twodarray);
         // addexceptdiagonals(twodarray);
-        exchangediagonals(twodarray);
+        // exchangediagonals(twodarray);
+        
         for (int[] val : twodarray) {
             for (int num : val) {
                 System.out.print(num + " ");
