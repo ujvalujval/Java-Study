@@ -40,15 +40,15 @@ public class TwistedCircular {
         int length = String.valueOf(num).length();
         int sum = 0;
         for (int i = 0; i < length; i++) {
-            int rem = num % 10;
-            num /= 10;
-            sum = rem * (int) Math.pow(10, length - 1) + num;
+            int rem = num % 10; // 1234 // 4
+            num /= 10; // 123
+            sum = rem * (int) Math.pow(10, length - 1) + num; //4123
             for (int j = 3; j * j <= sum; j++) {
                 if (sum % j == 0)
                     return false;
             }
             num = sum;
-            // System.out.println(sum);
+            System.out.println(sum);
         }
         return true;
     }
